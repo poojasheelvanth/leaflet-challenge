@@ -101,7 +101,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojs
           
     // Loop through the stations (they're the same size and have partially matching data)
     for (var i = 0; i < EarthquakeDataArray.length; i++) {
-      console.log(EarthquakeDataArray[0]);
       var latitude =EarthquakeDataArray[i].geometry.coordinates[1];
       var longitude =EarthquakeDataArray[i].geometry.coordinates[0];
       var magnitude = EarthquakeDataArray[i].properties.mag;
